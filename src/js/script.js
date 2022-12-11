@@ -317,6 +317,24 @@ const swiperBasketAllTheSlider = new Swiper('.basket-all-the-slider__slider', {
         nextEl: '.basket-all-the-slider__button-prev',
         prevEl: '.basket-all-the-slider__button-next',
     },
+    breakpoints: {
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 35,
+        },
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        366: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+    },
 })
 
 var inputer = document.querySelector('.f__input');

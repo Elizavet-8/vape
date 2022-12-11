@@ -39,10 +39,6 @@
       display: flex;
       align-items: center;
 
-      &__svg {
-
-      }
-
       &__text {
         border-bottom: 1px dashed #96AFB1;
         margin-left: 18px;
@@ -267,6 +263,467 @@
       background: #F6FEFF;
       border: 1px solid #96AFB1;
       border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .basket {
+    &-card {
+      padding: 20px 25px;
+
+      &__title {
+        margin: 0 20px;
+        max-width: 368px;
+      }
+
+      &__price {
+        &_bold {
+          font-size: 36px;
+        }
+      }
+    }
+
+    &-all-the {
+      padding-bottom: 84px;
+
+      &__row {
+        display: flex;
+      }
+
+      &-slider {
+        &__slider {
+          width: 470px;
+        }
+      }
+
+      &-promocode {
+        &-promo {
+          grid-template-columns: 1fr 135px;
+        }
+
+        &__sum {
+          &_grey {
+            font-size: 34px;
+          }
+
+          &_bold {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//@media (max-width: 1150px) {
+//  .basket {
+//
+//    &-all-the {
+//      &-slider {
+//        margin: 0;
+//
+//        &__slider {
+//          width: 300px;
+//        }
+//
+//        &__button {
+//          top: 78px;
+//        }
+//      }
+//    }
+//  }
+//}
+
+@media (max-width: 999px) {
+  .basket-all-the {
+    .card--recommendations {
+      background-color: transparent;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+
+      .card__title {
+        overflow: visible;
+        margin: 8px 0 11px;
+      }
+
+      .card__image-wrapper {
+        width: 100%;
+        height: 131px;
+        margin: 0;
+        padding: 20px;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card__image-label {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #DBFF00;
+        border-radius: 0px 0px 0px 10px;
+
+        svg path {
+          stroke: #000000;
+        }
+      }
+    }
+  }
+  .basket {
+    &__content {
+      max-height: 279px;
+      margin: 15px 0 41px;
+      padding-right: 10px;
+    }
+
+    &-card {
+      padding: 12px 34px 11px 12px;
+      height: 85px;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &__image-wrapper {
+        width: 84px;
+
+        .card__image {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+
+      &__title {
+        font-size: 14px;
+        line-height: 115%;
+        margin: 0 40px 0 15px;
+      }
+
+      &__price {
+        font-size: 12px;
+        line-height: 120%;
+
+        &_bold {
+          font-size: 24px;
+          line-height: 120%;
+          margin-bottom: 4px;
+        }
+      }
+
+      &-btn {
+        &__svg {
+          width: 12px;
+          height: auto;
+        }
+      }
+    }
+
+    &-all-the {
+      &__title {
+        font-size: 24px;
+        line-height: 120%;
+      }
+
+      &-slider {
+        &__slider {
+          width: 370px;
+        }
+
+        &__button {
+          top: 65px;
+
+          img {
+            width: 5.05px;
+            height: 9.6px;
+          }
+        }
+      }
+
+      &-promocode {
+        max-width: 300px;
+        padding: 20px;
+        min-height: 0;
+
+        &-promo {
+          height: 31px;
+          grid-template-columns: 138px 120px;
+
+          &__input {
+            padding: 8px 10px;
+            height: 31px;
+          }
+
+          &__btn {
+            font-size: 12px;
+            line-height: 16px;
+            height: 31px;
+          }
+        }
+
+        &__list {
+          margin-top: 10px;
+          margin-bottom: 8px;
+        }
+
+        &__item {
+          font-size: 14px;
+          line-height: 127.69%;
+          margin-bottom: 3px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &__sum {
+          margin-bottom: 15px;
+
+          &_grey {
+            font-size: 24px;
+            line-height: 120%;
+          }
+
+          &_bold {
+            font-size: 28px;
+            line-height: 120%;
+          }
+        }
+
+        &__link {
+          height: 44px;
+          font-size: 14px;
+          line-height: 100%;
+        }
+      }
+
+      &__btn {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  .basket {
+    &-head {
+      &-btn {
+        font-size: 12px;
+        line-height: 140%;
+
+        &__svg {
+          width: 10px;
+        }
+
+        &__text {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &-card {
+      padding: 12px 8px;
+      min-height: 110px;
+      height: auto;
+      margin-bottom: 10px;
+      display: grid;
+      grid-template-columns: 62px 1fr;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &__image-wrapper {
+        width: 50px;
+        margin-right: 12px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        .card__image {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+
+      &__title {
+        margin: 0 0 15px;
+        max-width: 100%;
+      }
+
+      &__digit {
+        align-items: flex-end;
+      }
+
+      &__price {
+        &_bold {
+          font-size: 14px;
+          line-height: 120%;
+          margin-bottom: 0;
+        }
+      }
+
+      &-btn {
+        &__svg {
+          width: 9px;
+        }
+      }
+    }
+
+    &-all-the {
+      padding-bottom: 50px;
+
+      .card--recommendations {
+        background-color: transparent;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+
+        .card__title {
+          overflow: visible;
+          margin: 8px 0 11px;
+        }
+
+        .card__image-wrapper {
+          width: 100%;
+          height: 131px;
+          margin: 0;
+          padding: 20px;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .card__image-label {
+          position: absolute;
+          width: 32px;
+          height: 32px;
+          background: #DBFF00;
+          border-radius: 0px 0px 0px 10px;
+
+          svg path {
+            stroke: #000000;
+          }
+        }
+      }
+
+      &__row {
+        flex-direction: column;
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        margin-bottom: 17px;
+
+      }
+
+      &-slider {
+        margin: 0;
+
+        &__slider {
+          width: 100%;
+        }
+
+        &__button {
+          top: 78px;
+        }
+      }
+
+      &-promocode {
+        max-width: 100%;
+        margin-top: 25px;
+
+        &-promo {
+          grid-template-columns: 1fr 120px;
+          height: 37px;
+
+          &__input {
+            height: 37px;
+          }
+
+          &__btn {
+            height: 37px;
+          }
+        }
+      }
+
+      &__btn {
+        width: 100%;
+        margin-top: 11px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .basket {
+    .quantity {
+      &__value,
+      &__btn {
+        height: 25px;
+        width: 25px;
+      }
+
+      &__value {
+        font-size: 16px;
+      }
+
+      &__btn {
+        img {
+          width: 10px;
+        }
+      }
+    }
+
+    &-head {
+      &-btn {
+        font-size: 10px;
+
+        &__svg {
+          width: 6px;
+        }
+
+        &__text {
+          margin-left: 4px;
+        }
+      }
+    }
+
+    &-all-the {
+      &-promocode {
+        &-promo {
+          display: flex;
+
+          &__input {
+            width: 60%;
+          }
+
+          &__btn {
+            width: 40%;
+          }
+        }
+      }
+
+      &__btn {
+        width: 100%;
+        margin-top: 11px;
+      }
     }
   }
 }
