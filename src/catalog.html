@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Каталог"
+})
+
+<body>
+<!-- header include -->
+@@include('html/partials/header.html')
+
+<!-- main -->
+<main class="main main--catalog">
+    <section class="section-head">
+        <div class="container container--md">
+            <!-- banner 1 -->
+            <div class="banner banner--1 banner--catalog1">
+                <p class="banner__title">СКИДКИ НА ТОПОВЫЕ АКСЕССУАРЫ <strong>до -25%</strong></p>
+                <button type="button" class="btn btn--lg btn--orange banner__btn">ВСЕ СКИДКИ</button>
+            </div><!-- end of banner 1-->
+
+            <!-- breadcrumbs -->
+            <ul class="breadcrumbs breadcrumbs--catalog">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Каталог
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section  id="catalog__section"  class="catalog__section">
+        <div class="container container--md">
+            <h2 class="catalog__title section__title custom__title">Каталог</h2>
+            <div class="catalog-banner">
+                <div class="catalog-banner__texts">
+                    <h3 class="catalog-banner__title">
+                        Нужна помощь? <span class="catalog-banner__title_purple">Позвоните или напишите</span>
+                    </h3>
+                    <div class="catalog-banner__text">
+                        <p>
+                            Наши специалисты ответят вам на любые вопросы
+                        </p>
+                    </div>
+                </div>
+                <ul class="catalog-banner-social__list">
+                    <li class="catalog-banner-social__item catalog-banner-social__item_green">
+                        <a href="" class="catalog-banner-social__link catalog-banner-social__link_green">
+                            <svg class="catalog-banner-social__svg catalog-banner-social__svg_green" width="44"
+                                 height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5708 22.1566C14.5586 26.2207 17.853 29.5 21.926 31.4694C22.224 31.6106 22.5537 31.6718 22.8825 31.6469C23.2114 31.622 23.528 31.5119 23.8014 31.3275L29.7987 27.3283C30.064 27.1514 30.3692 27.0435 30.6866 27.0144C31.0041 26.9852 31.3238 27.0357 31.6169 27.1613L42.8367 31.9698C43.2179 32.1317 43.5361 32.4131 43.7434 32.7716C43.9507 33.13 44.0359 33.5462 43.9862 33.9573C43.6315 36.7323 42.2776 39.2828 40.1778 41.1314C38.0781 42.98 35.3765 43.9999 32.579 44C23.9385 44 15.6519 40.5676 9.54216 34.4578C3.43242 28.3481 0 20.0615 0 11.421C0.000147105 8.62349 1.01999 5.92192 2.86858 3.82217C4.71717 1.72241 7.26773 0.368466 10.0427 0.0138369C10.4538 -0.0359133 10.8699 0.0492875 11.2284 0.256603C11.5869 0.463919 11.8683 0.782118 12.0302 1.16326L16.8429 12.3929C16.9674 12.6834 17.0181 13.0001 16.9905 13.3149C16.963 13.6297 16.858 13.9329 16.685 14.1973L12.6997 20.2866C12.5183 20.5605 12.4111 20.8768 12.3885 21.2046C12.3659 21.5323 12.4287 21.8604 12.5708 22.1566Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="catalog-banner-social__item catalog-banner-social__item_blue">
+                        <a href="" class="catalog-banner-social__link catalog-banner-social__link_blue">
+                            <svg class="catalog-banner-social__svg catalog-banner-social__svg_blue" width="49"
+                                 height="40" viewBox="0 0 49 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M45.7366 0.199664L2.28157 16.5135C-0.696807 17.6472 -0.644226 19.2526 1.77078 19.9986L12.8956 23.3777L38.7019 7.55753C39.9 6.78225 41.0118 7.22108 40.1029 8.00002L19.2204 26.3691L18.4204 37.5339C19.5847 37.5339 20.0918 37.0402 20.6927 36.4551L26.1274 31.3572L37.3949 39.4428C39.4493 40.5765 40.9179 39.9914 41.4662 37.5851L48.8652 3.64455L48.8615 3.6482C49.515 0.678729 47.7535 -0.509791 45.7366 0.199664Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="catalog-content__list">
+                <li class="catalog-content__item">
+                    <div class="catalog-content-card">
+                        <div class="catalog-content-card__image-wrapper card__image-wrapper">
+                            <picture>
+                                <source srcset="img/card/grinder.webp">
+                                <img class="card__image" src="img/card/grinder.png" alt="">
+                            </picture>
+                        </div>
+                        <h5 class="catalog-content-card__title">
+                            Вапорайзеры
+                        </h5>
+                        <ul class="catalog-content-card__list">
+                            <li class="catalog-content-card__item">
+                                — Портативные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Стационарные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Конвекционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Кондукционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Стационарные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Конвекционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Кондукционные
+                            </li>
+                        </ul>
+                        <button type="button" class="catalog-content-card__btn show-more btn review__btn">
+                            🠗 ПОКАЗАТЬ ЕЩЁ
+                        </button>
+                    </div>
+                </li>
+                <li class="catalog-content__item">
+                    <div class="catalog-content-card">
+                        <div class="catalog-content-card__image-wrapper card__image-wrapper">
+                            <picture>
+                                <source srcset="img/card/grinder.webp">
+                                <img class="card__image" src="img/card/grinder.png" alt="">
+                            </picture>
+                        </div>
+                        <h5 class="catalog-content-card__title">
+                            Вапорайзеры
+                        </h5>
+                        <ul class="catalog-content-card__list">
+                            <li class="catalog-content-card__item">
+                                — Портативные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Стационарные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Конвекционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Кондукционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Стационарные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Конвекционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Кондукционные
+                            </li>
+                        </ul>
+                        <button type="button" class="catalog-content-card__btn show-more btn review__btn">
+                            🠗 ПОКАЗАТЬ ЕЩЁ
+                        </button>
+                    </div>
+                </li>
+                <li class="catalog-content__item">
+                    <div class="catalog-content-card">
+                        <div class="catalog-content-card__image-wrapper card__image-wrapper">
+                            <picture>
+                                <source srcset="img/card/grinder.webp">
+                                <img class="card__image" src="img/card/grinder.png" alt="">
+                            </picture>
+                        </div>
+                        <h5 class="catalog-content-card__title">
+                            Вапорайзеры
+                        </h5>
+                        <ul class="catalog-content-card__list">
+                            <li class="catalog-content-card__item">
+                                — Портативные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Стационарные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Конвекционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Кондукционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Стационарные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Конвекционные
+                            </li>
+                            <li class="catalog-content-card__item">
+                                — Кондукционные
+                            </li>
+                        </ul>
+                        <button type="button" class="catalog-content-card__btn show-more btn review__btn">
+                            🠗 ПОКАЗАТЬ ЕЩЁ
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section section--advantages">
+        <div class="container container--md">
+            <div class="section__inner">
+                <h1 class="section__title">Преимущества</h1>
+                <div class="section__content">
+                    <article class="card card--advantages">
+                        <div class="card__image-wrapper">
+                            <img src="img/card/advantages/flag.svg" alt="">
+                        </div>
+                        <h4 class="card__title">Бесплатная <br>
+                            доставка </h4>
+                        <p class="card__text">Бесплатно доставим от 3000 ₽ курьером по Москве и от 5000 ₽ почтой
+                            или СДЭК по РФ</p>
+                    </article>
+                    <article class="card card--advantages">
+                        <div class="card__image-wrapper">
+                            <img src="img/card/advantages/check-shield.svg" alt="">
+                        </div>
+                        <h4 class="card__title">Гарантия <br>
+                            лучшей цены </h4>
+                        <p class="card__text">Сделаем персональное предложение, если найдете цену ниже</p>
+                    </article>
+                    <article class="card card--advantages">
+                        <div class="card__image-wrapper">
+                            <img src="img/card/advantages/heart.svg" alt="">
+                        </div>
+                        <h4 class="card__title">Надёжная <br>
+                            упаковка</h4>
+                        <p class="card__text">Даем гарантию 99%, что покупка дойдет целой. В другом случае
+                            отправим новый</p>
+                    </article>
+                    <article class="card card--advantages">
+                        <div class="card__image-wrapper">
+                            <img src="img/card/advantages/gift.svg" alt="">
+                        </div>
+                        <h4 class="card__title">Полезные <br>
+                            бонусы</h4>
+                        <p class="card__text">Каждый покупатель получает фирменные сувениры: полянки, зажигалку,
+                            контейнер</p>
+                    </article>
+                </div>
+
+                <div class="swiper swiper--advantages">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="card card--advantages">
+                                <div class="card__image-wrapper">
+                                    <img src="img/card/advantages/flag.svg" alt="">
+                                </div>
+                                <h4 class="card__title">Бесплатная <br>
+                                    доставка </h4>
+                                <p class="card__text">Бесплатно доставим от 3000 ₽ курьером по Москве и от 5000
+                                    ₽ почтой
+                                    или СДЭК по РФ</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card card--advantages">
+                                <div class="card__image-wrapper">
+                                    <img src="img/card/advantages/check-shield.svg" alt="">
+                                </div>
+                                <h4 class="card__title">Гарантия <br>
+                                    лучшей цены </h4>
+                                <p class="card__text">Сделаем персональное предложение, если найдете цену ниже
+                                </p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card card--advantages">
+                                <div class="card__image-wrapper">
+                                    <img src="img/card/advantages/heart.svg" alt="">
+                                </div>
+                                <h4 class="card__title">Надёжная <br>
+                                    упаковка</h4>
+                                <p class="card__text">Даем гарантию 99%, что покупка дойдет целой. В другом
+                                    случае
+                                    отправим новый</p>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card card--advantages">
+                                <div class="card__image-wrapper">
+                                    <img src="img/card/advantages/gift.svg" alt="">
+                                </div>
+                                <h4 class="card__title">Полезные <br>
+                                    бонусы</h4>
+                                <p class="card__text">Каждый покупатель получает фирменные сувениры: полянки,
+                                    зажигалку,
+                                    контейнер</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-footer">
+        <div class="container container--md">
+            <p class="catalog__text">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using. It is a long established fact that a reader will be distracted by the
+                readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                more-or-less normal distribution of letters, as opposed to using...
+                <a href="#" class="section-footer__link read-more custom-link">читать дальше</a>
+            </p>
+        </div>
+    </section>
+</main>
+<!-- footer include -->
+@@include('html/partials/footer.html')
+<!-- scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

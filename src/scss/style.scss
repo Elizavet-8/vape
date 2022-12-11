@@ -1,0 +1,258 @@
+// normalize css
+@import 'vendor/normalize.scss';
+
+// vars
+@import 'vars.scss';
+
+// fonts
+@import 'fonts.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $family, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: $colors-font-main;
+    letter-spacing: 0.05em;
+
+    background-color: #e9f3f4;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: unset;
+}
+
+input:hover, input:active, input:focus {
+    border: 1px solid #96AFB1!important;
+}
+
+.form--search .form__input:hover, .form--search .form__input:active {
+    border: 2px solid #CCE1E3!important;
+    border-radius: 2px;
+    background-image: url(../img/icons/closer.svg);
+}
+
+
+.form--search .form__input::-ms-clear {  display: none; width : 0; height: 0; }
+.form--search .form__input::-ms-reveal {  display: none; width : 0; height: 0; }
+
+.form--search .form__input::-webkit-search-decoration,
+.form--search .form__input::-webkit-search-cancel-button,
+.form--search .form__input::-webkit-search-results-button,
+.form--search .form__input::-webkit-search-results-decoration { display: none; }
+
+.form--search .form__input::-webkit-search-decoration,
+.form--search .form__input::-webkit-search-cancel-button,
+.form--search .form__input::-webkit-search-results-button,
+.form--search .form__input::-webkit-search-results-decoration { display: none; }
+
+
+.form--search {
+position: relative;
+}
+
+.close__search {
+    position: absolute;
+    right: 44px;
+    width: 17px;
+    top: 8px;
+    display: none;
+}
+
+.svg__back {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .form--search .form__input:hover, .form--search .form__input:active {
+        background-image: url(../img/icons/mobcircle.svg);
+        background-size: contain;
+        border-radius: 32px;
+        background-position-x: 100%!important;
+    }
+
+    .form--search .form__input:hover~.close__search, .form--search .form__input:active~.close__search {
+        display: block;
+    }
+
+    .header__active .svg__back {
+        display: block;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.bold {
+    font-weight: 700;
+} 
+
+.footer__contacts .contacts__address {
+    gap: 10px 9px;
+}
+
+.card__expand-text {
+    color: #96AFB1;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.card__arrow:not(a) {
+    color: #96AFB1;
+    font-size: 1.2rem; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hightlight-yellow {
+    color: #dbff00;
+}
+.hightlight-orange {
+    color: #ff4207;
+}
+
+.sidebar.active .black__pryamougolnik {
+    display: none;
+}
+
+@media (max-width: 768px) {
+.sidebar.active .black__pryamougolnik{
+    background: #000;
+    height: 141px;
+    width: 120%;
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    display: block;
+}
+
+.section__controls {
+    width: 100%;
+}
+}
+
+// main
+.main {
+    margin-top: 29px;
+
+    &--index {
+        margin-top: 43px;
+    }
+
+    &--reviews {
+        margin-top: 39px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 19px;
+    }
+
+    &--manufacturer {
+        margin-top: 29px;
+    }
+}
+
+.main--catalog {
+    margin-top: 50px;
+}
+
+.menu {
+    @media (max-width: 768px) {
+        height: auto!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu .nav--main {
+        margin-top: 25px;
+    }
+
+     
+    .card__image-wrapper {
+        max-width: 100%!important;
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    .mail__icon {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+// components
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/container.scss';
+@import 'components/nav.scss';
+@import 'components/socials.scss';
+@import 'components/form.scss';
+@import 'components/contacts.scss';
+@import 'components/burger.scss';
+@import 'components/btn.scss';
+@import 'components/user-controls.scss';
+@import 'components/banner.scss';
+@import 'components/section.scss';
+@import 'components/card.scss';
+@import 'components/swiper.scss';
+@import 'components/dropdown.scss';
+@import 'components/menu.scss';
+@import 'components/breadcrumbs.scss';
+@import 'components/product.scss';
+@import 'components/rating.scss';
+@import 'components/quantity.scss';
+@import 'components/tabs.scss';
+@import 'components/review.scss';
+@import 'components/sidebar.scss';
+@import 'components/range-slider.scss';
+@import 'components/catalog.scss';
+@import 'components/main.scss';
+@import 'pages/catalog.scss';
+@import 'pages/basket.scss';
+@import 'pages/dictionary.scss';
+@import 'pages/faq.scss';
+@import 'pages/registration.scss';

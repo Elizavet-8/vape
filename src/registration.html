@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Корзина"
+})
+
+<body>
+<!-- header include -->
+@@include('html/partials/header.html')
+
+<!-- main -->
+<main class="main main--registration">
+    <section class="section-head">
+        <div class="container container--md">
+            <ul class="breadcrumbs breadcrumbs--registration">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Корзина
+                </li>
+                <li class="breadcrumbs__item">
+                    Оформление
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="registration" class="registration">
+        <div class="container container--md">
+            <div class="registration-head">
+                <h2 class="registration-head__title section__title custom__title">Оформление</h2>
+                <div class="error">
+                    <svg class="error__svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 42C33.0457 42 42 33.0457 42 22C42 10.9543 33.0457 2 22 2C10.9543 2 2 10.9543 2 22C2 33.0457 10.9543 42 22 42Z"
+                              stroke="#FF4207" stroke-width="3" stroke-miterlimit="10"/>
+                        <path d="M34 15L27 22" stroke="#FF4207" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M34 22L27 15" stroke="#FF4207" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M17 15L10 22" stroke="#FF4207" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M17 22L10 15" stroke="#FF4207" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M22.5 35C23.8807 35 25 33.8807 25 32.5C25 31.1193 23.8807 30 22.5 30C21.1193 30 20 31.1193 20 32.5C20 33.8807 21.1193 35 22.5 35Z"
+                              fill="#FF4207"/>
+                    </svg>
+                    <div class="error__text">
+                        <span class="error__text_red">Ошибка! </span>Проверьте<br> правильно ли заполнены поля
+                    </div>
+                    <svg class="error__close" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.58121 11.3722L11.15 1.70629" stroke="#96AFB1" stroke-width="3"
+                              stroke-linecap="round"/>
+                        <path d="M11.3779 11.3724L1.80912 1.70644" stroke="#96AFB1" stroke-width="3"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+            <h3 class="registration__title">
+                ЛИЧНЫЕ ДАННЫЕ
+            </h3>
+            <form class="registration__row">
+                <div class="registration__column">
+                    <div class="registration-form">
+                        <div class="registration-form__block">
+                            <input type="text" class="registration-form__input" placeholder="Имя">
+                            <input type="email" class="registration-form__input" placeholder="Email">
+                            <input type="text" class="registration-form__input tel" placeholder="Телефон">
+                        </div>
+                        <div class="registration-form__block">
+                            <h5 class="registration-form__subtitle">
+                                СПОСОБ ОПЛАТЫ:
+                            </h5>
+                            <details class="registration-form-select">
+                                <summary class="registration-form-select__radios">
+                                    <div class="registration-form-select__icon">
+                                        <svg class="registration-form-select__svg" width="20" height="13"
+                                             viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L10 10L18 2" stroke="#DBFF00" stroke-width="4"
+                                                  stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <input class="registration-form-select__radio" type="radio" name="item" id="item1"
+                                           title="Картой онлайн" checked>
+                                    <input class="registration-form-select__radio" type="radio" name="item" id="item2"
+                                           title="Картой онлайн 2">
+                                </summary>
+                                <ul class="registration-form-select__list">
+                                    <li class="registration-form-select__item">
+                                        <label class="registration-form-select__label" for="item1">Картой онлайн</label>
+                                    </li>
+                                    <li class="registration-form-select__item">
+                                        <label class="registration-form-select__label" for="item2">Картой онлайн
+                                            2</label>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="registration-form__block">
+                            <h5 class="registration-form__subtitle">
+                                СПОСОБ ДОСТАВКИ:
+                            </h5>
+                            <details class="registration-form-select">
+                                <summary class="registration-form-select__radios">
+                                    <div class="registration-form-select__icon">
+                                        <svg class="registration-form-select__svg" width="20" height="13"
+                                             viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 2L10 10L18 2" stroke="#DBFF00" stroke-width="4"
+                                                  stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <input class="registration-form-select__radio" type="radio" name="item2" id="item3"
+                                           title="Картой онлайн 3" checked>
+                                    <input class="registration-form-select__radio" type="radio" name="item2" id="item4"
+                                           title="Картой онлайн 4">
+                                </summary>
+                                <ul class="registration-form-select__list">
+                                    <li class="registration-form-select__item">
+                                        <label class="registration-form-select__label" for="item3">Картой онлайн 3</label>
+                                    </li>
+                                    <li class="registration-form-select__item">
+                                        <label class="registration-form-select__label" for="item4">Картой онлайн 4</label>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="registration-form__block">
+                            <h5 class="registration-form__subtitle">
+                                АДРЕС
+                            </h5>
+                            <input type="text" class="registration-form__input" placeholder="Город">
+                            <div class="registration-form__grid">
+                                <div class="registration-form__item">
+                                    <input type="text" class="registration-form__input" placeholder="Улица">
+                                </div>
+                                <div class="registration-form__item">
+                                    <input type="text" class="registration-form__input" placeholder="Индекс">
+                                </div>
+                                <div class="registration-form__item">
+                                    <input type="text" class="registration-form__input" placeholder="Дом">
+                                </div>
+                                <div class="registration-form__item">
+                                    <input type="text" class="registration-form__input" placeholder="Квартира">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration-form__block">
+                            <h5 class="registration-form__subtitle">
+                                ВАШ КОММЕНТАРИЙ
+                            </h5>
+                            <textarea class="registration-form__textarea registration-form__input"
+                                      placeholder="Введите сообщение..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="registration__column">
+                    <h5 class="registration__title_small">
+                        Заказ в несколько кликов!<br>
+                        <a href="" class="registration__title_small-link"> Оставь номер телефона</a> и мы перезвоним
+                    </h5>
+                    <div class="registration-banner">
+                        <div class="registration-banner__list">
+                            <div class="registration-banner-card">
+                                <div class="registration-banner-card__image-wrapper card__image-wrapper">
+                                    <picture>
+                                        <source srcset="img/card/grinder.webp">
+                                        <img class="card__image" src="img/card/grinder.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="registration-banner-card__texts">
+                                    <h3 class="registration-banner-card__title">
+                                        Вапорайзер Arizer
+                                    </h3>
+                                    <div class="registration-banner-card__price">
+                                        <b class="registration-banner-card__price_bold">15 200 ₽</b>
+                                        <div class="registration-banner-card__price_crossed">17 200 ₽</div>
+                                        <div class="registration-banner-card__price_grey">1 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="registration-banner-card">
+                                <div class="registration-banner-card__image-wrapper card__image-wrapper">
+                                    <picture>
+                                        <source srcset="img/card/grinder.webp">
+                                        <img class="card__image" src="img/card/grinder.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="registration-banner-card__texts">
+                                    <h3 class="registration-banner-card__title">
+                                        Вапорайзер Arizer
+                                    </h3>
+                                    <div class="registration-banner-card__price">
+                                        <b class="registration-banner-card__price_bold">15 200 ₽</b>
+                                        <div class="registration-banner-card__price_crossed">17 200 ₽</div>
+                                        <div class="registration-banner-card__price_grey">1 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="registration-banner-card">
+                                <div class="registration-banner-card__image-wrapper card__image-wrapper">
+                                    <picture>
+                                        <source srcset="img/card/grinder.webp">
+                                        <img class="card__image" src="img/card/grinder.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="registration-banner-card__texts">
+                                    <h3 class="registration-banner-card__title">
+                                        Вапорайзер Arizer
+                                    </h3>
+                                    <div class="registration-banner-card__price">
+                                        <b class="registration-banner-card__price_bold">15 200 ₽</b>
+                                        <div class="registration-banner-card__price_crossed">17 200 ₽</div>
+                                        <div class="registration-banner-card__price_grey">1 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="registration-banner-card">
+                                <div class="registration-banner-card__image-wrapper card__image-wrapper">
+                                    <picture>
+                                        <source srcset="img/card/grinder.webp">
+                                        <img class="card__image" src="img/card/grinder.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="registration-banner-card__texts">
+                                    <h3 class="registration-banner-card__title">
+                                        Вапорайзер Arizer
+                                    </h3>
+                                    <div class="registration-banner-card__price">
+                                        <b class="registration-banner-card__price_bold">15 200 ₽</b>
+                                        <div class="registration-banner-card__price_crossed">17 200 ₽</div>
+                                        <div class="registration-banner-card__price_grey">1 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="registration-banner-card">
+                                <div class="registration-banner-card__image-wrapper card__image-wrapper">
+                                    <picture>
+                                        <source srcset="img/card/grinder.webp">
+                                        <img class="card__image" src="img/card/grinder.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="registration-banner-card__texts">
+                                    <h3 class="registration-banner-card__title">
+                                        Вапорайзер Arizer
+                                    </h3>
+                                    <div class="registration-banner-card__price">
+                                        <b class="registration-banner-card__price_bold">15 200 ₽</b>
+                                        <div class="registration-banner-card__price_crossed">17 200 ₽</div>
+                                        <div class="registration-banner-card__price_grey">1 шт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration-banner-delivery">
+                            <span>Доставка</span>
+                            <span class="registration-banner-delivery__dot"></span>
+                            <span>300 ₽</span>
+                        </div>
+                        <div class="registration-banner-price">
+                            <span class="registration-banner-price_grey">ИТОГО:</span>
+                            <b class="registration-banner-price_bold">12 560 ₽</b>
+                        </div>
+                        <div class="registration-banner__checkboxes">
+                            <label class="registration-banner-check">
+                                <input class="registration-banner-check__input" type="checkbox" checked>
+                                <span class="registration-banner-check__box">
+                                    <svg class="registration-banner-check__svg" width="15" height="11"
+                                         viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 3.5L6.5 8L12.5 2" stroke="#FF4207" stroke-width="4"
+                                              stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span>Отправить накладную на email</span>
+                            </label>
+                            <label class="registration-banner-check">
+                                <input class="registration-banner-check__input" type="checkbox" checked>
+                                <span class="registration-banner-check__box">
+                                    <svg class="registration-banner-check__svg" width="15" height="11"
+                                         viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 3.5L6.5 8L12.5 2" stroke="#FF4207" stroke-width="4"
+                                              stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span>
+                                    Я согласен с <a href="" class="registration-banner-check__link">политикой обработки персональных данных</a>
+                                </span>
+                            </label>
+                        </div>
+                        <button type="submit" class="registration-banner__btn btn btn--black add-to-cart">
+                            оформить
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+@@include('html/partials/footer.html')
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+.sidebar {
+  @media (max-width: 767px) {
+    display: none;
+    position: fixed;
+    inset: 0;
+    padding: 24px 18px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    background-color: #e9f3f4;
+    z-index: 2;
+
+    .sidebar__inner {
+      margin: 0 auto;
+    }
+
+    &.active {
+      display: block;
+      z-index: 999999;
+      overflow-x: hidden;
+
+      .sidebar__inner {
+        max-width: unset;
+      }
+    }
+  }
+
+  &__inner {
+    min-width: 259px;
+    @media (max-width: 999px) {
+      min-width: 174px;
+      max-width: 174px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media (max-width: 999px) {
+        font-size: 1.8rem!important;
+    }
+
+    @media (max-width: 567px) {
+      font-size: 1.6rem!important;
+  }
+  }
+
+  &__title-icon {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    &:hover .sidebar__title-icon-popup {
+      opacity: 1;
+    }
+  }
+
+  &__title-icon-popup {
+    position: absolute;
+    top: 37px;
+    left: -36px;
+    z-index: 2;
+
+    width: 232px;
+    padding: 14px 18px;
+
+    pointer-events: none;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #182d4d;
+    text-transform: none;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px rgba(49, 70, 124, 0.25),
+    0px 0px 10px rgba(165, 172, 199, 0.4);
+
+    opacity: 0;
+
+    transition: 0.3s linear;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 31px;
+      z-index: 1;
+
+      margin-top: -15px;
+      width: 0;
+      height: 0;
+
+      border-bottom: solid 15px #fff;
+      border-left: solid 15px transparent;
+      border-right: solid 15px transparent;
+      border-radius: 4px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__item {
+    width: 100%;
+    padding: 5px 16px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 11px;
+
+    border-radius: 4px;
+
+    transition: 0.3s linear;
+
+    &.active,
+    &:hover {
+      background-color: #8960e0;
+      color: #fff;
+    }
+
+    &.active .sidebar-item-btn-deselect {
+      display: block;
+    }
+
+    &.active:hover {
+      background-color: #182d4d;
+
+      .sidebar-item-btn-deselect svg path {
+        stroke: #8960e0;
+      }
+    }
+  }
+
+  .sidebar-item-btn-deselect {
+    display: none;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    svg path {
+      transition: 0.3s linear;
+    }
+  }
+
+  &__item-name {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-right: auto;
+  }
+
+  &__item-quantity {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #96afb1;
+  }
+
+  &-reset-filters-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 34px;
+
+    .btn__icon {
+    }
+
+    .btn__text {
+      color: #96afb1;
+      border-bottom: 1px #96afb1 dashed;
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    min-height: 259px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #fff;
+
+    background-image: url('../img/sidebar/bg.jpg');
+    background-color: #253765;
+  }
+
+  &__banner-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  &__banner-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #e9f3f4;
+  }
+
+  &__banner-image {
+    max-width: 195px;
+    max-height: 180px;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .range-slider__header-max, .range-slider__header-min {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  &__item {
+    padding: 6px 0;
+
+    &-name {
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &.active {
+      padding: 6px 11px;
+      margin: 0 -11px;
+      width: 103%;
+    }
+  }
+
+  &__list {
+    gap: 0;
+  }
+  &__block {
+    margin-bottom: 27px;
+  }
+}

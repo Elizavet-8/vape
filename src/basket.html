@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Корзина"
+})
+
+<body>
+<!-- header include -->
+@@include('html/partials/header.html')
+
+<!-- main -->
+<main class="main main--basket">
+    <section class="section-head">
+        <div class="container container--md">
+            <ul class="breadcrumbs breadcrumbs--basket">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Корзина
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="basket" class="basket">
+        <div class="container container--md">
+            <div class="basket-head">
+                <h2 class="basket-head__title section__title custom__title">Корзина</h2>
+                <button class="basket-head-btn">
+                    <svg class="basket-head-btn__svg" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.44337 4.2V2.6C4.44337 2.17565 4.63067 1.76869 4.96407 1.46863C5.29747 1.16857 5.74965 1 6.22115 1H9.7767C10.2482 1 10.7004 1.16857 11.0338 1.46863C11.3672 1.76869 11.5545 2.17565 11.5545 2.6V4.2M14.2211 4.2V15.4C14.2211 15.8243 14.0338 16.2313 13.7004 16.5314C13.367 16.8314 12.9149 17 12.4434 17H3.55448C3.08298 17 2.6308 16.8314 2.2974 16.5314C1.964 16.2313 1.7767 15.8243 1.7767 15.4V4.2H14.2211Z"
+                              stroke="#96AFB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="basket-head-btn__text">Очистить корзину</span>
+                </button>
+            </div>
+            <div class="basket__content">
+                <div class="basket-card">
+                    <div class="basket-card__image-wrapper card__image-wrapper">
+                        <picture>
+                            <source srcset="img/card/grinder.webp">
+                            <img class="card__image" src="img/card/grinder.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="basket-card__title">
+                        Вапорайзер Dynavap Vapcap
+                        The New M 2020 Rosilium Edition
+                        Super Ultra
+                    </h3>
+                    <div class="basket-card__digit">
+                        <div class="basket-card__quantity quantity">
+                            <button type="button" class="quantity__btn quantity-remove">
+                                <img src="img/icons/minus.svg" alt="">
+                            </button>
+                            <span class="quantity__value">1</span>
+                            <button type="button" class="quantity__btn quantity-add">
+                                <img src="img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="basket-card__price">
+                            <b class="basket-card__price_bold">15 200 ₽</b>
+                            <div class="basket-card__price_grey">17 200 ₽</div>
+                        </div>
+                        <button class="basket-card-btn">
+                            <svg class="basket-card-btn__svg" width="22" height="30" viewBox="0 0 22 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.66663 6.99984V4.33317C5.66663 3.62593 5.94758 2.94765 6.44768 2.44755C6.94777 1.94746 7.62605 1.6665 8.33329 1.6665H13.6666C14.3739 1.6665 15.0521 1.94746 15.5522 2.44755C16.0523 2.94765 16.3333 3.62593 16.3333 4.33317V6.99984M20.3333 6.99984V25.6665C20.3333 26.3737 20.0523 27.052 19.5522 27.5521C19.0521 28.0522 18.3739 28.3332 17.6666 28.3332H4.33329C3.62605 28.3332 2.94777 28.0522 2.44767 27.5521C1.94758 27.052 1.66663 26.3737 1.66663 25.6665V6.99984H20.3333Z"
+                                      stroke="#DCE7E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="basket-card">
+                    <div class="basket-card__image-wrapper card__image-wrapper">
+                        <picture>
+                            <source srcset="img/card/grinder.webp">
+                            <img class="card__image" src="img/card/grinder.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="basket-card__title">
+                        Вапорайзер Dynavap Vapcap
+                        The New M 2020 Rosilium Edition
+                        Super Ultra
+                    </h3>
+                    <div class="basket-card__digit">
+                        <div class="basket-card__quantity quantity">
+                            <button type="button" class="quantity__btn quantity-remove">
+                                <img src="img/icons/minus.svg" alt="">
+                            </button>
+                            <span class="quantity__value">1</span>
+                            <button type="button" class="quantity__btn quantity-add">
+                                <img src="img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="basket-card__price">
+                            <b class="basket-card__price_bold">15 200 ₽</b>
+                        </div>
+                        <button class="basket-card-btn">
+                            <svg class="basket-card-btn__svg" width="22" height="30" viewBox="0 0 22 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.66663 6.99984V4.33317C5.66663 3.62593 5.94758 2.94765 6.44768 2.44755C6.94777 1.94746 7.62605 1.6665 8.33329 1.6665H13.6666C14.3739 1.6665 15.0521 1.94746 15.5522 2.44755C16.0523 2.94765 16.3333 3.62593 16.3333 4.33317V6.99984M20.3333 6.99984V25.6665C20.3333 26.3737 20.0523 27.052 19.5522 27.5521C19.0521 28.0522 18.3739 28.3332 17.6666 28.3332H4.33329C3.62605 28.3332 2.94777 28.0522 2.44767 27.5521C1.94758 27.052 1.66663 26.3737 1.66663 25.6665V6.99984H20.3333Z"
+                                      stroke="#DCE7E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="basket-card">
+                    <div class="basket-card__image-wrapper card__image-wrapper">
+                        <picture>
+                            <source srcset="img/card/grinder.webp">
+                            <img class="card__image" src="img/card/grinder.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="basket-card__title">
+                        Вапорайзер Dynavap Vapcap
+                        The New M 2020 Rosilium Edition
+                        Super Ultra
+                    </h3>
+                    <div class="basket-card__digit">
+                        <div class="basket-card__quantity quantity">
+                            <button type="button" class="quantity__btn quantity-remove">
+                                <img src="img/icons/minus.svg" alt="">
+                            </button>
+                            <span class="quantity__value">1</span>
+                            <button type="button" class="quantity__btn quantity-add">
+                                <img src="img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="basket-card__price">
+                            <b class="basket-card__price_bold">15 200 ₽</b>
+                            <div class="basket-card__price_grey">17 200 ₽</div>
+                        </div>
+                        <button class="basket-card-btn">
+                            <svg class="basket-card-btn__svg" width="22" height="30" viewBox="0 0 22 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.66663 6.99984V4.33317C5.66663 3.62593 5.94758 2.94765 6.44768 2.44755C6.94777 1.94746 7.62605 1.6665 8.33329 1.6665H13.6666C14.3739 1.6665 15.0521 1.94746 15.5522 2.44755C16.0523 2.94765 16.3333 3.62593 16.3333 4.33317V6.99984M20.3333 6.99984V25.6665C20.3333 26.3737 20.0523 27.052 19.5522 27.5521C19.0521 28.0522 18.3739 28.3332 17.6666 28.3332H4.33329C3.62605 28.3332 2.94777 28.0522 2.44767 27.5521C1.94758 27.052 1.66663 26.3737 1.66663 25.6665V6.99984H20.3333Z"
+                                      stroke="#DCE7E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="basket-card">
+                    <div class="basket-card__image-wrapper card__image-wrapper">
+                        <picture>
+                            <source srcset="img/card/grinder.webp">
+                            <img class="card__image" src="img/card/grinder.png" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="basket-card__title">
+                        Вапорайзер Dynavap Vapcap
+                        The New M 2020 Rosilium Edition
+                        Super Ultra
+                    </h3>
+                    <div class="basket-card__digit">
+                        <div class="basket-card__quantity quantity">
+                            <button type="button" class="quantity__btn quantity-remove">
+                                <img src="img/icons/minus.svg" alt="">
+                            </button>
+                            <span class="quantity__value">1</span>
+                            <button type="button" class="quantity__btn quantity-add">
+                                <img src="img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="basket-card__price">
+                            <b class="basket-card__price_bold">15 200 ₽</b>
+                        </div>
+                        <button class="basket-card-btn">
+                            <svg class="basket-card-btn__svg" width="22" height="30" viewBox="0 0 22 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.66663 6.99984V4.33317C5.66663 3.62593 5.94758 2.94765 6.44768 2.44755C6.94777 1.94746 7.62605 1.6665 8.33329 1.6665H13.6666C14.3739 1.6665 15.0521 1.94746 15.5522 2.44755C16.0523 2.94765 16.3333 3.62593 16.3333 4.33317V6.99984M20.3333 6.99984V25.6665C20.3333 26.3737 20.0523 27.052 19.5522 27.5521C19.0521 28.0522 18.3739 28.3332 17.6666 28.3332H4.33329C3.62605 28.3332 2.94777 28.0522 2.44767 27.5521C1.94758 27.052 1.66663 26.3737 1.66663 25.6665V6.99984H20.3333Z"
+                                      stroke="#DCE7E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="basket-all-the">
+        <div class="container container--md">
+            <div class="basket-all-the__row">
+                <div class="basket-all-the__column">
+                    <h4 class="basket-all-the__title">С этим товаром покупают</h4>
+                    <div class="basket-all-the-slider">
+                        <div class="swiper basket-all-the-slider__slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <article class="card card--recommendations">
+                                        <div class="card__image-wrapper">
+                                            <picture>
+                                                <source srcset="img/section/recommendations/glass-active.webp">
+                                                <img class="card__image"
+                                                     src="img/section/recommendations/glass-active.png" alt="">
+                                            </picture>
+                                            <button class="card__image-label card__image-label_buy">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M21.1105 20.1106H8.01046L4.80991 2.50755C4.77146 2.29607 4.66 2.1048 4.49498 1.96707C4.32995 1.82935 4.12182 1.75391 3.90688 1.75391H1.83594"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M9.1774 24.6995C10.4447 24.6995 11.472 23.6722 11.472 22.4049C11.472 21.1377 10.4447 20.1104 9.1774 20.1104C7.91013 20.1104 6.88281 21.1377 6.88281 22.4049C6.88281 23.6722 7.91013 24.6995 9.1774 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M21.111 24.6995C22.3783 24.6995 23.4056 23.6722 23.4056 22.4049C23.4056 21.1377 22.3783 20.1104 21.111 20.1104C19.8437 20.1104 18.8164 21.1377 18.8164 22.4049C18.8164 23.6722 19.8437 24.6995 21.111 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M7.1766 15.5211H21.5815C22.0114 15.5211 22.4277 15.3702 22.7577 15.0948C23.0878 14.8193 23.3107 14.4368 23.3876 14.0138L24.7823 6.34277H5.50781"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                </svg>
+
+                                            </button>
+                                        </div>
+
+                                        <h2 class="card__title">Трубка Glass
+                                            Active</h2>
+
+                                        <p class="card__price">
+                                            <span class="card__price-new">1 300 ₽</span>
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="card card--recommendations">
+                                        <div class="card__image-wrapper">
+                                            <picture>
+                                                <source srcset="img/section/recommendations/ashtray-scale.webp">
+                                                <img class="card__image"
+                                                     src="img/section/recommendations/ashtray-scale.png" alt="">
+                                            </picture>
+                                            <button class="card__image-label card__image-label_buy">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M21.1105 20.1106H8.01046L4.80991 2.50755C4.77146 2.29607 4.66 2.1048 4.49498 1.96707C4.32995 1.82935 4.12182 1.75391 3.90688 1.75391H1.83594"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M9.1774 24.6995C10.4447 24.6995 11.472 23.6722 11.472 22.4049C11.472 21.1377 10.4447 20.1104 9.1774 20.1104C7.91013 20.1104 6.88281 21.1377 6.88281 22.4049C6.88281 23.6722 7.91013 24.6995 9.1774 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M21.111 24.6995C22.3783 24.6995 23.4056 23.6722 23.4056 22.4049C23.4056 21.1377 22.3783 20.1104 21.111 20.1104C19.8437 20.1104 18.8164 21.1377 18.8164 22.4049C18.8164 23.6722 19.8437 24.6995 21.111 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M7.1766 15.5211H21.5815C22.0114 15.5211 22.4277 15.3702 22.7577 15.0948C23.0878 14.8193 23.3107 14.4368 23.3876 14.0138L24.7823 6.34277H5.50781"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                </svg>
+
+                                            </button>
+                                        </div>
+
+                                        <h2 class="card__title">Весы Ashtray
+                                            scale</h2>
+
+                                        <p class="card__price">
+                                            <span class="card__price-new">2 100 ₽</span>
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="card card--recommendations">
+                                        <div class="card__image-wrapper">
+                                            <picture>
+                                                <source srcset="img/section/recommendations/ashtray-scale.webp">
+                                                <img class="card__image"
+                                                     src="img/section/recommendations/ashtray-scale.png" alt="">
+                                            </picture>
+                                            <button class="card__image-label card__image-label_buy">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M21.1105 20.1106H8.01046L4.80991 2.50755C4.77146 2.29607 4.66 2.1048 4.49498 1.96707C4.32995 1.82935 4.12182 1.75391 3.90688 1.75391H1.83594"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M9.1774 24.6995C10.4447 24.6995 11.472 23.6722 11.472 22.4049C11.472 21.1377 10.4447 20.1104 9.1774 20.1104C7.91013 20.1104 6.88281 21.1377 6.88281 22.4049C6.88281 23.6722 7.91013 24.6995 9.1774 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M21.111 24.6995C22.3783 24.6995 23.4056 23.6722 23.4056 22.4049C23.4056 21.1377 22.3783 20.1104 21.111 20.1104C19.8437 20.1104 18.8164 21.1377 18.8164 22.4049C18.8164 23.6722 19.8437 24.6995 21.111 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M7.1766 15.5211H21.5815C22.0114 15.5211 22.4277 15.3702 22.7577 15.0948C23.0878 14.8193 23.3107 14.4368 23.3876 14.0138L24.7823 6.34277H5.50781"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                </svg>
+
+                                            </button>
+                                        </div>
+
+                                        <h2 class="card__title">Весы Ashtray
+                                            scale</h2>
+
+                                        <p class="card__price">
+                                            <span class="card__price-new">2 100 ₽</span>
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="card card--recommendations">
+                                        <div class="card__image-wrapper">
+                                            <picture>
+                                                <source srcset="img/section/recommendations/ashtray-scale.webp">
+                                                <img class="card__image"
+                                                     src="img/section/recommendations/ashtray-scale.png" alt="">
+                                            </picture>
+                                            <button class="card__image-label card__image-label_buy">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M21.1105 20.1106H8.01046L4.80991 2.50755C4.77146 2.29607 4.66 2.1048 4.49498 1.96707C4.32995 1.82935 4.12182 1.75391 3.90688 1.75391H1.83594"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M9.1774 24.6995C10.4447 24.6995 11.472 23.6722 11.472 22.4049C11.472 21.1377 10.4447 20.1104 9.1774 20.1104C7.91013 20.1104 6.88281 21.1377 6.88281 22.4049C6.88281 23.6722 7.91013 24.6995 9.1774 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M21.111 24.6995C22.3783 24.6995 23.4056 23.6722 23.4056 22.4049C23.4056 21.1377 22.3783 20.1104 21.111 20.1104C19.8437 20.1104 18.8164 21.1377 18.8164 22.4049C18.8164 23.6722 19.8437 24.6995 21.111 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M7.1766 15.5211H21.5815C22.0114 15.5211 22.4277 15.3702 22.7577 15.0948C23.0878 14.8193 23.3107 14.4368 23.3876 14.0138L24.7823 6.34277H5.50781"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                </svg>
+
+                                            </button>
+                                        </div>
+
+                                        <h2 class="card__title">Весы Ashtray
+                                            scale</h2>
+
+                                        <p class="card__price">
+                                            <span class="card__price-new">2 100 ₽</span>
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="card card--recommendations">
+                                        <div class="card__image-wrapper">
+                                            <picture>
+                                                <source srcset="img/section/recommendations/sumo.webp">
+                                                <img class="card__image" src="img/section/recommendations/sumo.png"
+                                                     alt="">
+                                            </picture>
+                                            <button class="card__image-label card__image-label_buy">
+                                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M21.1105 20.1106H8.01046L4.80991 2.50755C4.77146 2.29607 4.66 2.1048 4.49498 1.96707C4.32995 1.82935 4.12182 1.75391 3.90688 1.75391H1.83594"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M9.1774 24.6995C10.4447 24.6995 11.472 23.6722 11.472 22.4049C11.472 21.1377 10.4447 20.1104 9.1774 20.1104C7.91013 20.1104 6.88281 21.1377 6.88281 22.4049C6.88281 23.6722 7.91013 24.6995 9.1774 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M21.111 24.6995C22.3783 24.6995 23.4056 23.6722 23.4056 22.4049C23.4056 21.1377 22.3783 20.1104 21.111 20.1104C19.8437 20.1104 18.8164 21.1377 18.8164 22.4049C18.8164 23.6722 19.8437 24.6995 21.111 24.6995Z"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                    <path
+                                                            d="M7.1766 15.5211H21.5815C22.0114 15.5211 22.4277 15.3702 22.7577 15.0948C23.0878 14.8193 23.3107 14.4368 23.3876 14.0138L24.7823 6.34277H5.50781"
+                                                            stroke="#000" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"/>
+                                                </svg>
+
+                                            </button>
+                                        </div>
+
+                                        <h2 class="card__title">Нейтрализатор
+                                            запаха Sumo</h2>
+
+                                        <p class="card__price">
+                                            <span class="card__price-new"> 400 ₽</span>
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev basket-all-the-slider__button basket-all-the-slider__button-prev"
+                             tabindex="0" role="button"
+                             aria-label="Previous slide" aria-controls="swiper-wrapper-33ec68fc10f710a5bc">
+                            <img class="icon" src="img/icons/chevron-right.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next basket-all-the-slider__button basket-all-the-slider__button-next"
+                             tabindex="0" role="button"
+                             aria-label="Next slide" aria-controls="swiper-wrapper-33ec68fc10f710a5bc">
+                            <img class="icon" src="img/icons/chevron-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-all-the-promocode">
+                    <form class="basket-all-the-promocode-promo" action="/">
+                        <input type="email" class="basket-all-the-promocode-promo__input form__input"
+                               placeholder="ПРОМОКОД">
+                        <button type="submit" class="basket-all-the-promocode-promo__btn btn form__btn">
+                            ПРИМЕНИТЬ
+                        </button>
+                    </form>
+                    <ul class="basket-all-the-promocode__list">
+                        <li class="basket-all-the-promocode__item">
+                            <span>Товары 5 шт.</span>
+                            <span>21 200 ₽</span>
+                        </li>
+                        <li class="basket-all-the-promocode__item">
+                            <span>Скидка</span>
+                            <span>3 640 ₽</span>
+                        </li>
+                    </ul>
+                    <div class="basket-all-the-promocode__sum">
+                        <span class="basket-all-the-promocode__sum_grey">
+                            СУММА:
+                        </span>
+                        <b class="basket-all-the-promocode__sum_bold">
+                            12 560 ₽
+                        </b>
+                    </div>
+                    <a href="" class="basket-all-the-promocode__link btn btn--black add-to-cart">
+                        К ОФОРМЛЕНИЮ
+                    </a>
+                </div>
+            </div>
+
+            <button type="button" class="basket-all-the__btn show-more btn review__btn">
+                ПРОДОЛЖИТЬ ПОКУПКИ →
+            </button>
+        </div>
+    </section>
+
+</main>
+<!-- footer include -->
+@@include('html/partials/footer.html')
+<!-- scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

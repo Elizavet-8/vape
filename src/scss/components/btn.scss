@@ -1,0 +1,262 @@
+.btn {
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $family;
+  font-size: 1.6rem;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: .2s;
+
+  &--lg {
+    height: 64px;
+
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+
+    @media (max-width: 999px) {
+      height: 37px;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 576px) {
+      height: 28px;
+      font-size: 1rem;
+    }
+  }
+
+
+  &__pay {
+    &:hover {
+      background: #182d4d;
+      color: #e9f3f4;
+    }
+
+    &:active {
+      background: #000;
+      color: #e9f3f4;
+    }
+  }
+
+  &--xl {
+    width: 100%;
+    height: 54px;
+
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #182d4d;
+    text-transform: uppercase;
+
+    background-color: #f6feff;
+    border-radius: 4px;
+    border: 1px solid #96afb1;
+
+    @media (max-width: 999px) {
+      font-size: 1.4rem;
+      height: 40px;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &--category {
+    padding: 11px 22px;
+    height: 40px;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #e9f3f4;
+    white-space: nowrap;
+
+    background-color: #96afb1;
+    border-radius: 4px;
+
+    transition: 0.3s linear;
+
+    @media (max-width: 999px) {
+      font-size: 1.4rem;
+      height: 30px;
+    }
+
+    @media (max-width: 576px) {
+      height: 40px;
+    }
+
+    &:hover,
+    &.active {
+      background-color: #182d4d;
+    }
+  }
+
+  &--black {
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      color: #DBFF00;
+    }
+
+    &:active {
+      background: #182D4D;
+      box-shadow: inset 0px 3px 0px #000000;
+      color: #fff;
+    }
+  }
+
+  &--orange {
+    background-color: #ff4207;
+    color: #000;
+
+    &:hover {
+      box-shadow: -2px -2px 8px rgba(255, 66, 7, 0.2), 2px 2px 8px rgba(255, 66, 7, 0.3);
+    }
+
+    &:active {
+      background: #EB2A00;
+      box-shadow: inset 0px 3px 0px #AD1F00;
+    }
+  }
+
+  &--outline {
+    border: 1px solid #96afb1;
+    font-weight: 400;
+    color: #182d4d;
+  }
+
+  &--sort {
+    position: relative;
+    width: 169px;
+    height: 40px;
+
+    padding-right: 40px;
+    padding-left: 20px;
+
+    justify-content: flex-start;
+
+    background-color: #fff;
+    border: 2px solid #182d4d;
+    border-radius: 4px;
+
+    .btn__icon {
+      position: absolute;
+      right: 0;
+      top: -2px;
+
+      margin-right: 0;
+
+      width: 40px;
+      height: 40px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #182d4d;
+
+      svg {
+        width: 22px;
+        height: 18px;
+
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 5px;
+  }
+
+  &.btn--filters-open {
+    display: none;
+    gap: 3px;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #182d4d;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &.sidebar-filters-close {
+    display: none;
+    margin-bottom: 32px;
+
+    gap: 14px;
+
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.show-more {
+  &:hover {
+    background: #182D4D;
+    color: #E9F3F4;
+
+    svg path {
+      fill: #fff;
+    }
+  }
+
+  &:active {
+    background: #000000;
+    color: #E9F3F4;
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+
+.form--reviews-section .form__btn {
+  &:hover {
+    background: #182D4D;
+  }
+
+  &:active {
+    background: #000000;
+  }
+}
+
+.card__image-label_buy {
+  border: none;
+  border-radius: 0px 0px 0px 10px;
+
+  &:hover {
+    background: #DBFF00;
+  }
+
+  &:active {
+    background: #000000;
+  }
+}
+
+.custom-link {
+  &:hover {
+    color: #182D4D;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: #582DB3;
+    text-decoration: underline;
+  }
+}

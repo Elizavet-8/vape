@@ -1,0 +1,32 @@
+.breadcrumbs {
+    margin-top: 29px;
+    margin-bottom: 2px;
+
+    &--catalog {
+        margin-top: 0;
+    }
+
+    &--reviews {
+        margin-bottom: 2px;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        letter-spacing: 0.05em;
+        color: #96afb1;
+        display: inline;
+
+        @media (max-width: 999px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__item + &__item:before {
+        content: '\005C';
+        padding: 8px;
+        color: #96afb1;
+        @media (max-width:576px) {
+            padding: 6px 4px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media (max-width: 999px) {
+        gap: 28px;
+    }
+
+    &__item {
+    }
+
+    &__btn {
+        position: relative;
+
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+    }
+
+    &__btn-text {
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__btn-dot {
+        position: absolute;
+        top: 0;
+        right: -6px;
+
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+    }
+
+    .purple {
+        background-color: #8960e0;
+    }
+
+    .orange {
+        background-color: #ff4207;
+    }
+}
